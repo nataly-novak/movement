@@ -1,0 +1,263 @@
+[gd_scene load_steps=6 format=3 uid="uid://b716g1586woba"]
+
+[ext_resource type="Texture2D" uid="uid://d1c5hmfl6on4u" path="res://images/background.png" id="1_l88t5"]
+[ext_resource type="Script" path="res://root.gd" id="1_vv8d1"]
+[ext_resource type="Texture2D" uid="uid://bx3lm4k721lyt" path="res://images/floor.png" id="2_qrpvf"]
+[ext_resource type="Texture2D" uid="uid://c4uyt8k8a4j7u" path="res://images/ball.png" id="3_wuba3"]
+[ext_resource type="Texture2D" uid="uid://cq8e1phn1nk01" path="res://images/ruler.png" id="4_slgdk"]
+
+[node name="root" type="Node2D"]
+script = ExtResource("1_vv8d1")
+
+[node name="background" type="Sprite2D" parent="."]
+texture = ExtResource("1_l88t5")
+centered = false
+
+[node name="floor" type="Sprite2D" parent="background"]
+position = Vector2(0, 600)
+texture = ExtResource("2_qrpvf")
+centered = false
+
+[node name="ruler" type="Sprite2D" parent="background"]
+position = Vector2(255, 600)
+texture = ExtResource("4_slgdk")
+centered = false
+offset = Vector2(0, -800)
+
+[node name="ruler2" type="Sprite2D" parent="background"]
+position = Vector2(1063, 609)
+rotation = -1.5708
+texture = ExtResource("4_slgdk")
+centered = false
+offset = Vector2(0, -800)
+
+[node name="ruler3" type="Sprite2D" parent="background"]
+position = Vector2(1364, 609)
+rotation = -1.5708
+texture = ExtResource("4_slgdk")
+centered = false
+offset = Vector2(0, -800)
+
+[node name="ball" type="Sprite2D" parent="background"]
+position = Vector2(300, 34)
+texture = ExtResource("3_wuba3")
+
+[node name="input" type="Node2D" parent="background"]
+position = Vector2(47, 47)
+
+[node name="i1" type="Node2D" parent="background/input"]
+
+[node name="label" type="Label" parent="background/input/i1"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "Xo"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="text" type="LineEdit" parent="background/input/i1"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="i2" type="Node2D" parent="background/input"]
+position = Vector2(0, 41)
+
+[node name="label" type="Label" parent="background/input/i2"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "Yo"
+vertical_alignment = 1
+
+[node name="text" type="LineEdit" parent="background/input/i2"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+
+[node name="i3" type="Node2D" parent="background/input"]
+position = Vector2(0, 82)
+
+[node name="label" type="Label" parent="background/input/i3"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "Vo
+"
+vertical_alignment = 1
+
+[node name="text" type="LineEdit" parent="background/input/i3"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+
+[node name="i4" type="Node2D" parent="background/input"]
+position = Vector2(0, 124)
+
+[node name="label" type="Label" parent="background/input/i4"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "alpha
+"
+vertical_alignment = 1
+
+[node name="text" type="LineEdit" parent="background/input/i4"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+
+[node name="i5" type="Node2D" parent="background/input"]
+position = Vector2(0, 164)
+
+[node name="label" type="Label" parent="background/input/i5"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "g
+"
+vertical_alignment = 1
+
+[node name="text" type="LineEdit" parent="background/input/i5"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "9.8
+
+"
+
+[node name="i6" type="Node2D" parent="background/input"]
+position = Vector2(0, 260)
+
+[node name="label" type="Label" parent="background/input/i6"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "X"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="text" type="LineEdit" parent="background/input/i6"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="i7" type="Node2D" parent="background/input"]
+position = Vector2(0, 301)
+
+[node name="label" type="Label" parent="background/input/i7"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "Y"
+vertical_alignment = 1
+
+[node name="text" type="LineEdit" parent="background/input/i7"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+
+[node name="i8" type="Node2D" parent="background/input"]
+position = Vector2(0, 342)
+
+[node name="label" type="Label" parent="background/input/i8"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "V
+"
+vertical_alignment = 1
+
+[node name="text" type="LineEdit" parent="background/input/i8"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+
+[node name="i9" type="Node2D" parent="background/input"]
+position = Vector2(0, 384)
+
+[node name="label" type="Label" parent="background/input/i9"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "beta
+"
+vertical_alignment = 1
+
+[node name="text" type="LineEdit" parent="background/input/i9"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+
+[node name="i10" type="Node2D" parent="background/input"]
+position = Vector2(0, 426)
+
+[node name="label" type="Label" parent="background/input/i10"]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 42.0
+offset_bottom = 29.0
+text = "Hmax
+"
+vertical_alignment = 1
+
+[node name="text" type="LineEdit" parent="background/input/i10"]
+offset_left = 41.0
+offset_top = -7.0
+offset_right = 94.0
+offset_bottom = 30.0
+text = "0
+"
+
+[node name="start" type="Button" parent="background/input"]
+offset_left = 3.0
+offset_top = 208.0
+offset_right = 108.0
+offset_bottom = 240.0
+text = "Start"
+
+[node name="pause" type="Button" parent="background/input"]
+offset_left = 3.0
+offset_top = 463.0
+offset_right = 110.0
+offset_bottom = 495.0
+text = "Pause"
+
+[connection signal="pressed" from="background/input/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="background/input/pause" to="." method="_on_pause_pressed"]
